@@ -1,14 +1,9 @@
 from datetime import datetime
+from collections import defaultdict
 
 
 def get_birthdays_per_week(users):
-    next_week_birthdays = {
-        "Monday": [],
-        "Tuesday": [],
-        "Wednesday": [],
-        "Thursday": [],
-        "Friday": []
-    }
+    next_week_birthdays = defaultdict(list)
 
     today = datetime.today().date()
 
